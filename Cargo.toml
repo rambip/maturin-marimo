@@ -1,0 +1,11 @@
+[package]
+name = "maturin-marimo"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "maturin_marimo"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.27.0", features = ["abi3"]}

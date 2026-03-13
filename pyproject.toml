@@ -1,0 +1,23 @@
+[project]
+name = "maturin-marimo"
+version = "0.1.0"
+description = "Minimal maturin + marimo setup"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "maturin>=1.8,<2.0",
+    "marimo>=0.11,<0.12",
+]
+
+[build-system]
+requires = ["maturin>=1.8,<2.0"]
+build-backend = "maturin"
+
+[tool.uv]
+package = true
+
+[tool.maturin]
+bindings = "pyo3"
